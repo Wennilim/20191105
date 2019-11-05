@@ -1,0 +1,61 @@
+// to create a calculator of area.
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+	int num;
+	cout << "Welcome to Area calculator!\n";
+	cout << "1.The area of a circle.\n";
+	cout << "1.The area of a rectangle.\n";
+	cout << "1.The area of a triangle.\n";
+	cout << "Please choose a menu to calculate the shape:\n";
+	cin >> num;
+
+	switch (num)
+	{
+		double A,r;
+	case 1:
+		cout << "This is a calculator for determine the area of a circle.\n";
+		cout << "Please enter the radius of the circle!\a\n";
+		cin >> r;
+		A = 3.14159*(r*r);
+		cout << "The area of the circle is " << A << "." << endl;
+		break;
+
+		double L, W;
+	case 2:
+		cout << "This is the calculator for determine the area of a rectangle. \n";
+		cout << "Please enter the length of the rectangle.\n\a";
+		cin >> L;
+		cout << "Please enter the width of the rectangle.\n\a";
+		cin >> W;
+		A = L * W;
+		cout << "The area of the rectngle is " << A << "." << endl;
+		break;
+
+		double B, H;
+	case 3:
+		cout << "This is the calculator for determine the area of a triangle. \n";
+		cout << "Please enter the base of the triangle.\n ";
+		cin >> B;
+		cout << "Please enter the height of the triangle.\n";
+		cin >> H;
+		A = (B*H) / 2;
+		cout << "The area of the triangle is " << A << "." << endl;
+		break;
+
+	case 4 :
+		cout << "Quit\n";
+		break;
+
+	default:
+		cout << "SYNTAX ERROR!\a\n";
+
+	}
+    return 0;
+}
